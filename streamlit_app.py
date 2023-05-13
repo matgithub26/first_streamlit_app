@@ -43,7 +43,7 @@ my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_rows =my_cur.fetchall()
 streamlit.header("The fruit load list conatins:")
-streamlit.text(my_data_rows)
+streamlit.dataframe(my_data_rows)
 
 
 
